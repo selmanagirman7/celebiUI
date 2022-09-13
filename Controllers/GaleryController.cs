@@ -1,0 +1,16 @@
+﻿using Business.Concrete;
+using DataAccess.Concrete;
+using Microsoft.AspNetCore.Mvc;
+
+namespace celebiUI.Controllers
+{
+    public class GaleryController : Controller
+    {
+        GaleryManager galeryManager = new GaleryManager(new EfGaleyDal());
+        public IActionResult Index()
+        {
+            var result = galeryManager.GetAll();
+            return View(result);
+        }
+    }
+}
