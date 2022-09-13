@@ -1,0 +1,16 @@
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\bin\Release\netcoreapp3.1\DataAccess.deps.json
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\bin\Release\netcoreapp3.1\DataAccess.runtimeconfig.json
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\bin\Release\netcoreapp3.1\DataAccess.runtimeconfig.dev.json
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\bin\Release\netcoreapp3.1\DataAccess.dll
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\bin\Release\netcoreapp3.1\DataAccess.pdb
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\bin\Release\netcoreapp3.1\Entity.dll
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\bin\Release\netcoreapp3.1\Entity.pdb
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.csproj.AssemblyReference.cache
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.csproj.CopyComplete
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.dll
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.pdb
+C:\Users\AjansCode\Desktop\HALLE\karaduman\DataAccess\obj\Release\netcoreapp3.1\DataAccess.genruntimeconfig.cache
