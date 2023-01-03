@@ -1,6 +1,6 @@
 using System;
 
-namespace KaradumanRafUI.Models
+namespace WebPanel.Models
 {
     public class ErrorViewModel
     {

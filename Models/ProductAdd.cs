@@ -1,19 +1,17 @@
-﻿
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 
-namespace KaradumanRafUI.Models
+namespace WebPanel.Models
 {
-    //ProductManager productmanager = new ProductManager(new EfProductDal());
-
- 
     public class ProductAdd
     {
-        public int ProductId { get; set; }
         public string ProductName { get; set; }
         public string ProductNameEng { get; set; }
         public string ProductDescription { get; set; }
         public string ProductDescriptionEng { get; set; }
         public IFormFile ImgPath { get; set; }
+        public IFormFile ImgPath2 { get; set; }
+        public IFormFile ImgPath3 { get; set; }
+        public IFormFile ImgPath4 { get; set; }
         public string Metarial { get; set; }
         public string MetarialEng { get; set; }
         public string SeatAngle { get; set; }
@@ -25,13 +23,4 @@ namespace KaradumanRafUI.Models
         public string BoxSize { get; set; }
         public string BoxSizeEng { get; set; }
     }
-   
-   
-
-
-
-
-
-
-
 }
