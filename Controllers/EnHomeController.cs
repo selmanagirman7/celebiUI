@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace celebiUI.Controllers
+namespace KaradumanRafUI.Controllers
 {
     public class EnHomeController : Controller
     {

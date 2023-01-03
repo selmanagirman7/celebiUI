@@ -2,15 +2,16 @@
 using DataAccess.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
-namespace celebiUI.Controllers
+namespace KaradumanRafUI.Controllers
 {
     public class CategoryController : Controller
     {
-        CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
-
+        CategoryManager categoryManeger = new CategoryManager(new EfCategoryDal());
+     
         public IActionResult Index()
         {
-            var result = categoryManager.GetAll();
+            var result = categoryManeger.GetAll();
+
             return View(result);
         }
     }

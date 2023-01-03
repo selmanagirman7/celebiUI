@@ -2,13 +2,11 @@
 using DataAccess.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
-namespace celebiUI.Controllers
+namespace KaradumanRafUI.Controllers
 {
     public class EnOurServiceController : Controller
     {
         OurServiceManager ourServiceManager = new OurServiceManager(new EfOurServiceDal());
-      
-
         public IActionResult Index()
         {
             var result = ourServiceManager.GetAll();

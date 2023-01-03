@@ -1,4 +1,4 @@
-﻿using celebiUI.Models;
+﻿using KaradumanRafUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace celebiUI.Controllers
+namespace KaradumanRafUI.Controllers
 {
     public class HomeController : Controller
     {

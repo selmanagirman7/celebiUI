@@ -2,12 +2,11 @@
 using DataAccess.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
-namespace celebiUI.Controllers
+namespace KaradumanRafUI.Controllers
 {
     public class EnAboutController : Controller
     {
         AboutManager aboutManager = new AboutManager(new EfAboutDal());
-
         public IActionResult Index()
         {
             var result = aboutManager.GetAll();

@@ -2,7 +2,7 @@
 using DataAccess.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
-namespace celebiUI.Controllers
+namespace KaradumanRafUI.Controllers
 {
     public class EnReferanceController : Controller
     {
@@ -11,7 +11,6 @@ namespace celebiUI.Controllers
         {
             var result = referanceManager.GetAll();
             return View(result);
-
         }
     }
 }

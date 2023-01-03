@@ -2,12 +2,11 @@
 using DataAccess.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
-namespace celebiUI.Controllers
+namespace KaradumanRafUI.Controllers
 {
     public class EnContactController : Controller
     {
-        ContactManager contactManager = new ContactManager(new EfContactDal());
-
+        ContactManager contactManager = new ContactManager(new EfContactDal()); 
         public IActionResult Index()
         {
             var result = contactManager.GetAll();
