@@ -1,0 +1,65 @@
+﻿@model Entity.Product
+
+@{
+    ViewData["Title"] = "ProductAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main-container">
+		<div class="pd-ltr-20 xs-pd-20-10">
+			<div class="min-height-200px">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<div class="title">
+								<h4>Ürün Ekle</h4>
+							</div>
+							
+						</div>
+			
+					</div>
+				</div>
+
+
+
+				<!-- Default Basic Forms Start -->
+				<div class="pd-20 card-box mb-30">
+					<div class="clearfix">
+						<div class="pull-left">
+							<h4 class="text-blue h4">Ürün Ekleme Sayfası</h4>
+						</div>
+						
+					</div>
+				@using(Html.BeginForm("ProductAdd","Products",FormMethod.Post) ){
+					<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Ürün Adı</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.ProductName,new{@class="form-control"})
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">İngilizce Ürün Adı</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.ProductNameEng,new{@class="form-control"})
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Ürün Açıklaması</label>
+							<div class="col-sm-12 col-md-10">
+							@Html.TextAreaFor(x=>x.ProductDescription,10,3,new{@class="form-control"})
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">İngilizce Ürün Acıklaması</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextAreaFor(x=>x.ProductDescriptionEng,10,3,new{@class="form-control"})
+							</div>
+						</div>
+					
+     <button class="btn  btn-outline-primary w-100" type="submit"><i class="icon-copy fa fa-save" aria-hidden="true"></i> Kaydet</button>
+						
+					
+}
+		
+		
+
+	</div>

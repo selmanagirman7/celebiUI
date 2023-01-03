@@ -1,0 +1,106 @@
+﻿@model Entity.HomeAbout
+
+@{
+    ViewData["Title"] = "HomeAboutAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="main-container">
+		<div class="pd-ltr-20 xs-pd-20-10">
+			<div class="min-height-200px">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<div class="title">
+								<h4>Anasayfa Hakkımızda  Maddeler </h4>
+							</div>
+							
+						</div>
+			
+					</div>
+				</div>
+
+
+
+				<!-- Default Basic Forms Start -->
+				<div class="pd-20 card-box mb-30">
+					<div class="clearfix">
+						<div class="pull-left">
+							<h4 class="text-blue h4">Anasayfa Hakkımızda  Maddeler Ekle</h4>
+						</div>
+						
+					</div>
+				@using(Html.BeginForm("CategoryAdd","Category",FormMethod.Post) ){
+					<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Madde 1</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.Feature,new{@class="form-control"})
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Madde 1 İngilizce</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.FeatureEng,new{@class="form-control"})
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Madde 1 Acıklama </label>
+							<div class="col-sm-12 col-md-10">
+							@Html.TextAreaFor(x=>x.FeatureDesc,10,3,new{@class="form-control"})
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Madde 1 Acıklaması İngilizce</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextAreaFor(x=>x.FeatureDescEng,10,3,new{@class="form-control"})
+							</div>
+						</div>
+					
+
+							<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Madde 2</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.Feature2,new{@class="form-control"})
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Madde 2 İngilizce</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.Feature2Eng,new{@class="form-control"})
+							</div>
+						</div>
+
+
+
+							<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Madde 2 Acıklama </label>
+							<div class="col-sm-12 col-md-10">
+							@Html.TextAreaFor(x=>x.FeatureDesc2,10,3,new{@class="form-control"})
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Madde 2 Acıklaması İngilizce</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextAreaFor(x=>x.FeatureDesc2Eng,10,3,new{@class="form-control"})
+							</div>
+						</div>
+					
+
+
+					
+
+     <button class="btn  btn-outline-primary w-100" type="submit"><i class="icon-copy fa fa-save" aria-hidden="true"></i> Kaydet</button>
+						
+					
+}
+		
+		
+
+	</div>
+

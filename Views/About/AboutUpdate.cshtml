@@ -1,0 +1,86 @@
+﻿@model Entity.About
+@{
+    ViewData["Title"] = "AboutAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main-container">
+		<div class="pd-ltr-20 xs-pd-20-10">
+			<div class="min-height-200px">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<div class="title">
+								<h4>Hakkımızda</h4>
+							</div>
+							
+						</div>
+			
+					</div>
+				</div>
+
+
+
+				<!-- Default Basic Forms Start -->
+				<div class="pd-20 card-box mb-30">
+					<div class="clearfix">
+						<div class="pull-left">
+							<h4 class="text-blue h4">Hakkımızda Güncelleme Sayfası</h4>
+						</div>
+						
+					</div>
+				@using(Html.BeginForm("AboutAdd","About",FormMethod.Post) ){
+					<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Hakkımızda Adı</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.AboutName,new{@class="form-control"})
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Hakkımızda Adı İngilizce</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.AboutNameEng,new{@class="form-control"})
+							</div>
+						</div>
+
+
+							<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Hakkımızda Başlık</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.AboutTitle,new{@class="form-control"})
+							</div>
+						</div>
+
+
+
+							<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Hakkımızda Başlık İngilizce</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextBoxFor(x=>x.AboutTitleEng,new{@class="form-control"})
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Hakkımızda Açıklaması</label>
+							<div class="col-sm-12 col-md-10">
+							@Html.TextAreaFor(x=>x.AboutDescription,10,3,new{@class="form-control"})
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-12 col-md-2 col-form-label">Hakkımızda Acıklaması İngiilizce</label>
+							<div class="col-sm-12 col-md-10">
+								@Html.TextAreaFor(x=>x.AboutDescriptionEng,10,3,new{@class="form-control"})
+							</div>
+						</div>
+					
+				
+					
+
+     <button class="btn  btn-outline-primary w-100" type="submit"><i class="icon-copy fa fa-save" aria-hidden="true"></i> Kaydet</button>
+						
+					
+}
+		
+		
+
+	</div>
