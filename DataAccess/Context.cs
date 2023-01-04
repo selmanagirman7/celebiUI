@@ -31,7 +31,7 @@ namespace DataAccess
         //user id = sa; password=CRy5RcSGe526aS;                                                                                                                                                                                                                                                                                                         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder. UseSqlServer(@"Server=193.53.87.166;Database=CelebiHırdavatDb;user id = sa;  password=CRy5RcSGe526aS; Trusted_Connection=false");
+            optionsBuilder. UseSqlServer(@"Server=;Database=;user id = ;  password=; Trusted_Connection=false");
         }
     }
 }
